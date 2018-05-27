@@ -16,7 +16,7 @@ app.get('/v1/key/:id', function(req, res){
     console.log(req.params);
 	database.User.findOne({key: id}, function(err, data) {
         if (err) return res.send('this key does not exist in database');
-        res.send('We try to find out the user from the "key = '+ id + ' on url:\n ' + 'Value: ' + data.value);
+        res.send('The value of {key: '+ id + '} is: {' + data.value + '}');
     })
 });	
 

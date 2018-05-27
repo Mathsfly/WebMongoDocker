@@ -30,15 +30,14 @@ Any scripts to run program or test (if necessary)
 
 
 # Install program:
-- Install module (npm i)
 - Install Mongodb
 - Install Docker
-- when npm start in local:
-use DATABASE_CONNECTION = 'mongodb://localhost/myDatabase'
-run mongodb: ../bin/mongod --dbpath ../dataFolder .
-
+- when run program in local with npm:
 ```sh
-// To run program: (for the local, it must be change DATABASE_CONNECTION = 'mongodb://localhost/myDatabase')
+DATABASE_CONNECTION = 'mongodb://localhost/myDatabase'
+//run mongodb
+run mongodb: ../bin/mongod --dbpath ../dataFolder .
+// To run program: (for the local, it must change DATABASE_CONNECTION = 'mongodb://localhost/myDatabase')
 npm start
 // To test unitary test 
 npm test 

@@ -27,7 +27,7 @@ exports.initializeMongo = function (connection = DATABASE_CONNECTION) {
 }
 
 exports.AddUser = function (dataUser) {
-    const data = new User(dataUser)
+    const data = new User(dataUser);
     data.save(function (err, fluffy) {
         if (err) console.log('Failed');
     })
